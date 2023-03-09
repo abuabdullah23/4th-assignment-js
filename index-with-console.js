@@ -15,8 +15,8 @@ function mindGame(number) {
 
     return finalResult;
 }
-// const result = mindGame(2);
-// console.log(result);
+const result = mindGame(2);
+console.log(result);
 
 
 
@@ -26,7 +26,7 @@ function mindGame(number) {
 // ===============================
 function evenOdd(string) {
     let result = '';
-    if (typeof string == 'string') {
+    if (typeof string === 'string') {
         if (string.length % 2 === 0) {
             result = 'even';
         } else {
@@ -37,8 +37,8 @@ function evenOdd(string) {
     }
     return result;
 }
-// const myString = evenOdd('Phero');
-// console.log(myString);
+const myString = evenOdd(4);
+console.log(myString);
 
 
 
@@ -61,8 +61,8 @@ function isLGSeven(number) {
     }
     return x;
 }
-// const myNumber = isLGSeven(7);
-// console.log(myNumber);
+const myNumber = isLGSeven(6);
+console.log(myNumber);
 
 
 
@@ -84,8 +84,8 @@ function findingBadData(array) {
     return count;
 }
 let inputArray = [-4, -9, -5, -33, -55];
-// const myArray = findingBadData(inputArray);
-// console.log(myArray);
+const myArray = findingBadData(inputArray);
+console.log(myArray);
 
 
 
@@ -107,7 +107,7 @@ function gemsToDiamond(num1, num2, num3) {
             return output;
         }
     } else {
-        return 'Please! input valid number. Do not use others type of variable';
+        return 'Please! input all valid number. Do not use others type of variable';
     }
 }
 const friendsNumbers = gemsToDiamond(20, 200, 50);

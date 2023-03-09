@@ -5,7 +5,7 @@ function mindGame(number) {
     // Input data validation checking;
     if (typeof number == 'number') {
     } else {
-        return 'Please! enter number.'
+        return 'Please! enter a number.';
     }
     // Calculation
     const multiply3 = number * 3;
@@ -24,14 +24,15 @@ function mindGame(number) {
 // ===============================
 function evenOdd(string) {
     let result = '';
-    if (typeof string == 'string') {
+    // if you input the wrong type of variable, it will show an alert message.
+    if (typeof string === 'string') {
         if (string.length % 2 === 0) {
             result = 'even';
         } else {
             result = 'odd';
         }
     } else {
-        return 'Please! enter string.'
+        return 'Please! enter a string.';
     }
     return result;
 }
@@ -43,6 +44,7 @@ function evenOdd(string) {
 function isLGSeven(number) {
     let x = 0;
     let deference = number - 7;
+    // if you input the wrong type of variable, it will show an alert message.
     if (typeof number == 'number') {
         if (deference < 7) {
             x = deference;
@@ -62,6 +64,7 @@ function isLGSeven(number) {
 // ===============================
 function findingBadData(array) {
     let count = 0;
+    // if you input the wrong type of variable, it will show an alert message.
     if (Array.isArray(array) === true) {
         for (let i = 0; i < array.length; i++) {
             if (array[i] < 0) {
@@ -69,7 +72,7 @@ function findingBadData(array) {
             }
         }
     } else {
-        return 'Please! Input an array.'
+        return 'Please! Input an array.';
     }
     return count;
 }
@@ -87,6 +90,7 @@ function gemsToDiamond(num1, num2, num3) {
     thirdFriendGems = num3 * 43;
     output = firstFriendGems + secondFriendGems + thirdFriendGems;
 
+    // if you input the wrong type of variable, it will show an alert message.
     if (typeof num1 === 'number' && typeof num2 === 'number' && typeof num3 === 'number') {
         if (output > 1000 * 2) {
             return output - 2000;
@@ -94,6 +98,6 @@ function gemsToDiamond(num1, num2, num3) {
             return output;
         }
     } else {
-        return 'Please! input valid number. Do not use others type of variable';
+        return 'Please! input all valid numbers. Do not use other types of variables.';
     }
 }
